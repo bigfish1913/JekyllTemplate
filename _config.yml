@@ -1,0 +1,89 @@
+######################站点全局信息，需要部分修改#########################
+# Site settings
+title: 老付 
+header-img: img/home-bg.jpg
+email: wells_fuwei@163.com
+description: "Blog,Github,jekyll, javascript,laofu,H5, 前端, .Net, web,老付,国内最好的.net博客"
+github_username:  fuwei199006
+zhihu_username: OceanHeaven
+cloud_tie_public_key: "\"0e84bd60fbce402ea83c2d276e2d22ca\""
+#Baidu analytics / 百度统计(异步的js码，注意使用异步版本的)
+baidu_analyze: fce7d216459d05df5b8386ca65a90e8d
+##########################上述信息需要您修改,cloud_tie_public_key两侧必须有引号############################
+
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+posts_dir: ./_posts
+#collections:  null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      ["jekyll-paginate"]
+#gems:      []
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: pretty
+paginate: 16
+paginate_path: /page/:num
+timezone: Asia/Shanghai
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+# Markdown Processors
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter: true
+  input: GFM
+
+  syntax_highlighter_opts:
+    wrap:              div
+    # line_numbers:      inline
+    # line_number_start: 1
+    tab_width:         4
+    bold_every:        10
+    css:               style

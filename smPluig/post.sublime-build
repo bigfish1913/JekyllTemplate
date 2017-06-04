@@ -1,0 +1,5 @@
+{
+  "cmd": ["d:\\Users\\w_fu\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\post.cmd", "$file"],
+   "working_dir": "$file_path",
+    "selector": "text.html.markdown"
+}
